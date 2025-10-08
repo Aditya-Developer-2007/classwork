@@ -8,7 +8,7 @@
         /* type selector */
         body{
             font-size: 30px;
-        }
+        } 
         /* h1{
             color: red;
         }
@@ -16,7 +16,7 @@
             color: purple;
         }
         div{
-            color: brown;
+            color: rgb(0, 0, 0);
             background-color: bisque;
         }
         input{
@@ -31,7 +31,7 @@
             color: purple;
         }
         .hellodiv{
-            color: brown;
+            color: rgb(10, 205, 182);
             background-color: bisque;
         }
         .inputfield{
@@ -39,7 +39,7 @@
         } */
 
         /* id delector */
-        #he1{
+        /* #he1{
             color: red;
         }
         #pa1{
@@ -51,17 +51,64 @@
         }
         #if1{
             color: violet;
+        } */ 
+
+        /* Atribute Selector */
+        /* input[required]{
+            border: 2px solid red;
         }
+        a[href^="https"]{
+            color: rgb(235, 34, 12);
+        }
+        a[href$="com"]{
+            color: black;
+        }
+        a[href*="google"]{
+            color: cadetblue;
+        } */
+
+        /* combinator selector */
+        div li{
+            color: red;
+        }
+        div>ul{
+            color: blue;
+        }
+        #div-first + h1{
+            color: blueviolet;
+        }
+
+        
     </style>
 </head>
 <body>
-    <h1 class="heading1" id="he1">Hello</h1>
+    <!-- <h1 class="heading1" id="he1">Hello</h1>
     <p class="para1" id="pa1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dignissimos numquam libero accusamus excepturi labore quas eius error natus autem, nulla odio sapiente tempore sunt impedit facilis adipisci odit itaque.</p>
     <div class="hellodiv" id="hed1">
         hola Amigo
     </div>
     <br>
-    <input class="inputfield" id="if1" type="text" placeholder="color....">
+    <input class="inputfield" id="if1" type="text" name="colorname" placeholder="color...." required><br>
+    <input type="email" name="email" placeholder="color...."><br>
+    <a href="https://google.com">google</a>
+
+    <a href="https://google.in">google</a> -->
+
+    <div id="div-first">
+        <ul>
+            <li>list 1</li>
+            <li>list 2</li>
+            <li>list 3</li>
+            <li>list 4</li>
+        </ul>
+        <div id="div-nes1">
+            <h1>
+                hello
+            </h1>
+        </div>
+    </div>
+    <div id="div-second"><h1>hi</h1></div>
+    <div id="div-third"><h1>hola</h1></div>
 </body>
 </html>
 
@@ -71,3 +118,6 @@
 <!-- 3. Dont use special characters except _ and - -->
 <!-- 4. Dont use reserved words -->
 <!-- 5. Class name and id name should be relevant -->
+    
+        <!-- priorities -->
+<!-- inline css> ID selector > Class selector > attribute selector >Type selector > Universal Selector -->
